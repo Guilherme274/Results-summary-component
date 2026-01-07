@@ -1,0 +1,138 @@
+*, *::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    overflow: hidden;
+    background-color: beige;
+}
+
+main{
+    width: min(100%, 650px);
+    display: flex;
+    position: relative;
+    border-radius: 15px;
+    align-items: stretch;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 5px 5px 5px rgb(236, 219, 219);
+}
+
+.main_results{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border: 1px solid black;
+    width: 50%;
+    padding: 0.5rem;
+    background-color: rgb(118, 17, 177);
+    border-radius: 20px;
+}
+
+.main_results p{
+    text-align: center;
+}
+
+.main_results_title{
+    padding: 1rem;
+    color:rgb(201, 192, 192);
+    font-size: clamp(1rem, 1.5rem, 2rem);
+}
+
+.main_results_result{
+    background-color: gray;
+    border-radius: 50%;
+    margin: 1rem 0;
+    width: 120px;
+    padding: 1.4rem;
+}
+
+.main_results_result_number{
+    font-size: clamp(1rem, 3vw, 3rem);
+}
+
+.main_results_result_maxResult{
+    color: white;
+    opacity: 0.8;
+    margin-bottom: 0.5rem;
+}
+
+.main_results_state{
+    font-size: clamp(1rem, 3vw, 2rem);
+    margin: 1rem 0;
+}
+
+.main_results_information{
+    color:rgb(201, 192, 192);
+    font-size: clamp(0.5rem, 1rem, 1.5rem);
+}
+
+.main_summary{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;   
+    padding: 0.5rem;
+}
+
+.main_summary > p{
+    align-self: flex-start;
+    font-size: clamp(1rem, 1.5rem, 2rem);
+    padding: 1rem;
+}
+
+.main_summary_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.2rem;
+    margin: 1rem 0;
+}
+
+.main_summary_memory, .main_summary_reaction, .main_summary_verbal, .main_summary_visual{
+    margin-bottom: 0.5rem;
+    border-radius: 10px;
+    width: 90%;
+    padding: 1rem;
+    display: flex;
+    flex:1;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main_summary_reaction{
+    margin-top: 1rem;
+    background-color: rgb(231, 163, 163, 0.7);
+}
+
+.main_summary_memory{
+    background-color: rgb(231, 163, 163, 0.7);
+}
+
+.main_summary_verbal{
+    background-color: rgb(231, 163, 163, 0.7);
+}
+
+.main_summary_visual{
+    background-color: rgb(231, 163, 163, 0.7);
+}
+
+main button{
+    border-radius: 15px;
+    padding: 0.8rem 4.5rem;
+    border: none;
+    background-color: black;
+    color: white;
+    margin-top: 2rem;
+}

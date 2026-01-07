@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="/Results-summary-component/css/style.css">
   
   <title>Frontend Mentor | Results summary component</title>
 
@@ -18,31 +19,47 @@
 
   <main>
     
-    <section>
-      <p>Your Result</p>
-      <p>76</p>
-      <p>of 100</p>
+    <section class="main_results">
+      <p class="main_results_title">Your Result</p>
 
-      <p>Great</p>
-      <p>You scored higher than 65% of the people who have taken these tests.</p>
+      <section class="main_results_result">
+        <p class="main_results_result_number">76</p>
+        <p class="main_results_result_maxResult">of 100</p>
+      </section>
+      
+
+      <p class="main_results_state">Great</p>
+      <p class="main_results_information">You scored higher than 65% of the people who have taken these tests.</p>
     </section>
 
-    <section>
-    <p>Summary</p>
+    <section class="main_summary">
+      <p>Summary</p>
 
-      <p>Reaction</p>
-      <p>80 / 100</p>
+      <section class="main_summary_container">
+        <section class="main_summary_reaction">
+          <p>Reaction</p>
+          <p>80 / 100</p>
+        </section>
 
-      <p>Memory</p>
-      <p>92 / 100</p>
+        <section class="main_summary_memory">
+          <p>Memory</p>
+          <p>92 / 100</p>
+        </section>
 
-      <p>Verbal</p>
-      <p>61 / 100</p>
+        <section class="main_summary_verbal">
+          <p>Verbal</p>
+          <p>61 / 100</p>
+        </section>
 
-      <p>Visual</p>
-      <p>72 / 100</p>
+        <section class="main_summary_visual">
+          <p>Visual</p>
+          <p>72 / 100</p>
+        </section>
 
-      <button>Continue</button>
+         <button>Continue</button>
+      </section>
+
+     
 
     </section>
 
